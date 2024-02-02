@@ -4,6 +4,7 @@ module.exports = {
     extends: [
         'airbnb/base',
         'airbnb-typescript/base',
+        "plugin:@tanstack/eslint-plugin-query/recommended",
         'eslint:recommended',
         'prettier',
         'plugin:@typescript-eslint/recommended',
@@ -36,6 +37,9 @@ module.exports = {
         'react-hooks/rules-of-hooks': 'error',
         'react-hooks/exhaustive-deps': 'warn',
         '@typescript-eslint/no-shadow': 'off',
+        "@tanstack/query/exhaustive-deps": "error",
+        "@tanstack/query/no-rest-destructuring": "warn",
+        "@tanstack/query/stable-query-client": "error",
         'sort-imports': ['error', {ignoreCase: true, ignoreDeclarationSort: true}],
         'import/order': [
             'error',
